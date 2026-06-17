@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="LibrarySystem/LibrarySystem.csproj" />
+  <Project Path="LibrarySystem_BL/LibrarySystem_BL.csproj" Id="31c29a77-9f48-4b3a-a0dd-4b8327b7d129" />
+  <Project Path="LibrarySystem_DL/LibrarySystem_DL.csproj" Id="50d2ed84-8af2-4de2-8e52-1633c4b29470" />
+</Solution>
