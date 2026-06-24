@@ -41,11 +41,11 @@
             reportsToolStripMenuItem = new ToolStripMenuItem();
             settingsToolStripMenuItem = new ToolStripMenuItem();
             scRightSide = new SplitContainer();
+            uiTextBox1 = new Sunny.UI.UITextBox();
             parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
-            uiTextBox1 = new Sunny.UI.UITextBox();
-            ctrlDashboard1 = new LibrarySystem.MainScreen.ctrlDashboard();
+            ctrlMainBook1 = new LibrarySystem.MainScreen.Books.ctrlMainBook();
             separator1 = new ReaLTaiizor.Controls.Separator();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
@@ -162,7 +162,6 @@
             dashboradToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             dashboradToolStripMenuItem.Size = new Size(151, 46);
             dashboradToolStripMenuItem.Text = "Dashboard";
-           
             // 
             // booksToolStripMenuItem
             // 
@@ -234,21 +233,39 @@
             // 
             // scRightSide.Panel1
             // 
+            scRightSide.Panel1.Controls.Add(uiTextBox1);
             scRightSide.Panel1.Controls.Add(parrotPictureBox1);
             scRightSide.Panel1.Controls.Add(lUsername);
             scRightSide.Panel1.Controls.Add(avUser);
-            scRightSide.Panel1.Controls.Add(uiTextBox1);
             scRightSide.Panel1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // scRightSide.Panel2
             // 
             scRightSide.Panel2.BackColor = Color.WhiteSmoke;
-            scRightSide.Panel2.Controls.Add(ctrlDashboard1);
+            scRightSide.Panel2.Controls.Add(ctrlMainBook1);
             scRightSide.Panel2.Controls.Add(separator1);
             scRightSide.Size = new Size(884, 595);
             scRightSide.SplitterDistance = 76;
             scRightSide.SplitterWidth = 1;
             scRightSide.TabIndex = 0;
+            // 
+            // uiTextBox1
+            // 
+            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox1.Icon = Properties.Resources.search;
+            uiTextBox1.Location = new Point(14, 20);
+            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox1.MinimumSize = new Size(1, 16);
+            uiTextBox1.Name = "uiTextBox1";
+            uiTextBox1.Padding = new Padding(5);
+            uiTextBox1.Radius = 10;
+            uiTextBox1.RectColor = Color.Black;
+            uiTextBox1.ShowText = false;
+            uiTextBox1.Size = new Size(447, 36);
+            uiTextBox1.SymbolRotate = 100;
+            uiTextBox1.TabIndex = 5;
+            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox1.Watermark = "Search for Book , Member , Loan ...";
             // 
             // parrotPictureBox1
             // 
@@ -295,29 +312,13 @@
             avUser.Size = new Size(58, 52);
             avUser.TabIndex = 4;
             // 
-            // uiTextBox1
+            // ctrlMainBook1
             // 
-            uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox1.Location = new Point(17, 20);
-            uiTextBox1.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox1.MinimumSize = new Size(1, 16);
-            uiTextBox1.Name = "uiTextBox1";
-            uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.RectColor = Color.Black;
-            uiTextBox1.ShowText = false;
-            uiTextBox1.Size = new Size(447, 36);
-            uiTextBox1.SymbolRotate = 100;
-            uiTextBox1.TabIndex = 3;
-            uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox1.Watermark = "Search for books , mebers or loans...";
-            // 
-            // ctrlDashboard1
-            // 
-            ctrlDashboard1.Dock = DockStyle.Fill;
-            ctrlDashboard1.Location = new Point(0, 12);
-            ctrlDashboard1.Name = "ctrlDashboard1";
-            ctrlDashboard1.Size = new Size(884, 506);
-            ctrlDashboard1.TabIndex = 1;
+            ctrlMainBook1.Dock = DockStyle.Fill;
+            ctrlMainBook1.Location = new Point(0, 12);
+            ctrlMainBook1.Name = "ctrlMainBook1";
+            ctrlMainBook1.Size = new Size(884, 506);
+            ctrlMainBook1.TabIndex = 1;
             // 
             // separator1
             // 
@@ -377,10 +378,10 @@
         private ToolStripMenuItem reportsToolStripMenuItem;
         private ToolStripMenuItem settingsToolStripMenuItem;
         private ReaLTaiizor.Controls.Separator separator1;
-        private Sunny.UI.UITextBox uiTextBox1;
         private Sunny.UI.UIAvatar avUser;
         private Sunny.UI.UILabel lUsername;
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
-        private MainScreen.ctrlDashboard ctrlDashboard1;
+        private Sunny.UI.UITextBox uiTextBox1;
+        private MainScreen.Books.ctrlMainBook ctrlMainBook1;
     }
 }
