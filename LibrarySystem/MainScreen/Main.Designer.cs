@@ -45,7 +45,6 @@
             parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
-            ctrlMainBook1 = new LibrarySystem.MainScreen.Books.ctrlMainBook();
             separator1 = new ReaLTaiizor.Controls.Separator();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
@@ -242,7 +241,6 @@
             // scRightSide.Panel2
             // 
             scRightSide.Panel2.BackColor = Color.WhiteSmoke;
-            scRightSide.Panel2.Controls.Add(ctrlMainBook1);
             scRightSide.Panel2.Controls.Add(separator1);
             scRightSide.Size = new Size(884, 595);
             scRightSide.SplitterDistance = 76;
@@ -312,14 +310,6 @@
             avUser.Size = new Size(58, 52);
             avUser.TabIndex = 4;
             // 
-            // ctrlMainBook1
-            // 
-            ctrlMainBook1.Dock = DockStyle.Fill;
-            ctrlMainBook1.Location = new Point(0, 12);
-            ctrlMainBook1.Name = "ctrlMainBook1";
-            ctrlMainBook1.Size = new Size(884, 506);
-            ctrlMainBook1.TabIndex = 1;
-            // 
             // separator1
             // 
             separator1.Dock = DockStyle.Top;
@@ -382,6 +372,5 @@
         private Sunny.UI.UILabel lUsername;
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
         private Sunny.UI.UITextBox uiTextBox1;
-        private MainScreen.Books.ctrlMainBook ctrlMainBook1;
     }
 }
