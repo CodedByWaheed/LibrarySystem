@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             scMain = new SplitContainer();
-            ctrlMemberCard1 = new ctrlMemberCard();
+            ctrlMemberCard2 = new ctrlMemberCard();
             spBottomMain = new SplitContainer();
             spTopBottomMain = new SplitContainer();
             crownLabel2 = new ReaLTaiizor.Controls.CrownLabel();
@@ -65,31 +65,31 @@
             // 
             scMain.Dock = DockStyle.Fill;
             scMain.FixedPanel = FixedPanel.Panel1;
-            scMain.IsSplitterFixed = true;
             scMain.Location = new Point(0, 0);
             scMain.Name = "scMain";
             scMain.Orientation = Orientation.Horizontal;
             // 
             // scMain.Panel1
             // 
-            scMain.Panel1.Controls.Add(ctrlMemberCard1);
+            scMain.Panel1.Controls.Add(ctrlMemberCard2);
             // 
             // scMain.Panel2
             // 
             scMain.Panel2.Controls.Add(spBottomMain);
-            scMain.Size = new Size(840, 616);
-            scMain.SplitterDistance = 148;
+            scMain.Size = new Size(931, 721);
+            scMain.SplitterDistance = 199;
             scMain.TabIndex = 0;
             scMain.SplitterMoved += splitContainer1_SplitterMoved;
             // 
-            // ctrlMemberCard1
+            // ctrlMemberCard2
             // 
-            ctrlMemberCard1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            ctrlMemberCard1.BackColor = Color.White;
-            ctrlMemberCard1.Location = new Point(17, 9);
-            ctrlMemberCard1.Name = "ctrlMemberCard1";
-            ctrlMemberCard1.Size = new Size(799, 130);
-            ctrlMemberCard1.TabIndex = 0;
+            ctrlMemberCard2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ctrlMemberCard2.BackColor = Color.White;
+            ctrlMemberCard2.Border = ctrlMemberCard.enBorder.Visible;
+            ctrlMemberCard2.Location = new Point(39, 12);
+            ctrlMemberCard2.Name = "ctrlMemberCard2";
+            ctrlMemberCard2.Size = new Size(852, 177);
+            ctrlMemberCard2.TabIndex = 0;
             // 
             // spBottomMain
             // 
@@ -105,8 +105,8 @@
             // spBottomMain.Panel2
             // 
             spBottomMain.Panel2.Controls.Add(scBottomBottomMain);
-            spBottomMain.Size = new Size(840, 464);
-            spBottomMain.SplitterDistance = 230;
+            spBottomMain.Size = new Size(931, 518);
+            spBottomMain.SplitterDistance = 256;
             spBottomMain.TabIndex = 0;
             // 
             // spTopBottomMain
@@ -128,7 +128,7 @@
             // spTopBottomMain.Panel2
             // 
             spTopBottomMain.Panel2.Controls.Add(flpActiveLoans);
-            spTopBottomMain.Size = new Size(840, 230);
+            spTopBottomMain.Size = new Size(931, 256);
             spTopBottomMain.SplitterDistance = 42;
             spTopBottomMain.TabIndex = 0;
             // 
@@ -197,7 +197,7 @@
             flpActiveLoans.Padding = new Padding(2);
             flpActiveLoans.RectColor = Color.Transparent;
             flpActiveLoans.ShowText = false;
-            flpActiveLoans.Size = new Size(799, 174);
+            flpActiveLoans.Size = new Size(890, 200);
             flpActiveLoans.TabIndex = 0;
             flpActiveLoans.Text = "uiFlowLayoutPanel1";
             flpActiveLoans.TextAlignment = ContentAlignment.MiddleCenter;
@@ -220,7 +220,7 @@
             // scBottomBottomMain.Panel2
             // 
             scBottomBottomMain.Panel2.Controls.Add(flpFines);
-            scBottomBottomMain.Size = new Size(840, 230);
+            scBottomBottomMain.Size = new Size(931, 258);
             scBottomBottomMain.SplitterDistance = 43;
             scBottomBottomMain.TabIndex = 1;
             // 
@@ -290,7 +290,7 @@
             flpFines.Radius = 15;
             flpFines.RectColor = Color.Transparent;
             flpFines.ShowText = false;
-            flpFines.Size = new Size(799, 169);
+            flpFines.Size = new Size(890, 197);
             flpFines.TabIndex = 1;
             flpFines.Text = "uiFlowLayoutPanel2";
             flpFines.TextAlignment = ContentAlignment.MiddleCenter;
@@ -302,7 +302,7 @@
             BackColor = Color.White;
             Controls.Add(scMain);
             Name = "ctrlMainMember";
-            Size = new Size(840, 616);
+            Size = new Size(931, 721);
             scMain.Panel1.ResumeLayout(false);
             scMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scMain).EndInit();
@@ -341,5 +341,6 @@
         private ReaLTaiizor.Controls.BigLabel bigLabel1;
         private Sunny.UI.UIFlowLayoutPanel flpActiveLoans;
         private Sunny.UI.UIFlowLayoutPanel flpFines;
+        private ctrlMemberCard ctrlMemberCard2;
     }
 }

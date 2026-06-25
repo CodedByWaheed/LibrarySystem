@@ -45,8 +45,8 @@
             parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
-            ctrlMainMember1 = new LibrarySystem.MainScreen.Members.ctrlMainMember();
             separator1 = new ReaLTaiizor.Controls.Separator();
+            ctrlMainLoan1 = new LibrarySystem.MainScreen.Loans.ctrlMainLoan();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -80,7 +80,7 @@
             // scMain.Panel2
             // 
             scMain.Panel2.Controls.Add(scRightSide);
-            scMain.Size = new Size(1167, 709);
+            scMain.Size = new Size(1177, 777);
             scMain.SplitterDistance = 216;
             scMain.SplitterWidth = 3;
             scMain.TabIndex = 0;
@@ -102,7 +102,7 @@
             // scLeftSide.Panel2
             // 
             scLeftSide.Panel2.Controls.Add(menuStrip1);
-            scLeftSide.Size = new Size(216, 709);
+            scLeftSide.Size = new Size(216, 777);
             scLeftSide.SplitterDistance = 92;
             scLeftSide.SplitterWidth = 1;
             scLeftSide.TabIndex = 1;
@@ -149,7 +149,7 @@
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.RenderMode = ToolStripRenderMode.Professional;
-            menuStrip1.Size = new Size(204, 616);
+            menuStrip1.Size = new Size(204, 684);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -242,9 +242,9 @@
             // scRightSide.Panel2
             // 
             scRightSide.Panel2.BackColor = Color.WhiteSmoke;
-            scRightSide.Panel2.Controls.Add(ctrlMainMember1);
+            scRightSide.Panel2.Controls.Add(ctrlMainLoan1);
             scRightSide.Panel2.Controls.Add(separator1);
-            scRightSide.Size = new Size(948, 709);
+            scRightSide.Size = new Size(958, 777);
             scRightSide.SplitterDistance = 76;
             scRightSide.SplitterWidth = 1;
             scRightSide.TabIndex = 0;
@@ -281,7 +281,7 @@
             parrotPictureBox1.InterpolationType = System.Drawing.Drawing2D.InterpolationMode.HighQualityBilinear;
             parrotPictureBox1.IsElipse = true;
             parrotPictureBox1.IsParallax = false;
-            parrotPictureBox1.Location = new Point(701, 22);
+            parrotPictureBox1.Location = new Point(711, 22);
             parrotPictureBox1.Name = "parrotPictureBox1";
             parrotPictureBox1.PixelOffsetType = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
             parrotPictureBox1.Size = new Size(32, 32);
@@ -295,7 +295,7 @@
             lUsername.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lUsername.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lUsername.ForeColor = Color.FromArgb(48, 48, 48);
-            lUsername.Location = new Point(750, 24);
+            lUsername.Location = new Point(760, 24);
             lUsername.Name = "lUsername";
             lUsername.Size = new Size(125, 29);
             lUsername.TabIndex = 1;
@@ -307,20 +307,11 @@
             avUser.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             avUser.AvatarSize = 50;
             avUser.Font = new Font("Microsoft Sans Serif", 12F);
-            avUser.Location = new Point(878, 12);
+            avUser.Location = new Point(888, 12);
             avUser.MinimumSize = new Size(1, 1);
             avUser.Name = "avUser";
             avUser.Size = new Size(58, 52);
             avUser.TabIndex = 4;
-            // 
-            // ctrlMainMember1
-            // 
-            ctrlMainMember1.BackColor = Color.White;
-            ctrlMainMember1.Dock = DockStyle.Fill;
-            ctrlMainMember1.Location = new Point(0, 12);
-            ctrlMainMember1.Name = "ctrlMainMember1";
-            ctrlMainMember1.Size = new Size(948, 620);
-            ctrlMainMember1.TabIndex = 1;
             // 
             // separator1
             // 
@@ -329,15 +320,24 @@
             separator1.LineColor = Color.Gray;
             separator1.Location = new Point(0, 0);
             separator1.Name = "separator1";
-            separator1.Size = new Size(948, 12);
+            separator1.Size = new Size(958, 12);
             separator1.TabIndex = 0;
             separator1.Text = "separator1";
+            // 
+            // ctrlMainLoan1
+            // 
+            ctrlMainLoan1.BackColor = Color.White;
+            ctrlMainLoan1.Dock = DockStyle.Fill;
+            ctrlMainLoan1.Location = new Point(0, 12);
+            ctrlMainLoan1.Name = "ctrlMainLoan1";
+            ctrlMainLoan1.Size = new Size(958, 688);
+            ctrlMainLoan1.TabIndex = 1;
             // 
             // fmMain
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.White;
-            ClientSize = new Size(1167, 709);
+            ClientSize = new Size(1177, 777);
             Controls.Add(scMain);
             MainMenuStrip = menuStrip1;
             MaximumSize = new Size(1920, 1030);
@@ -385,6 +385,6 @@
         private Sunny.UI.UILabel lUsername;
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
         private Sunny.UI.UITextBox uiTextBox1;
-        private MainScreen.Members.ctrlMainMember ctrlMainMember1;
+        private MainScreen.Loans.ctrlMainLoan ctrlMainLoan1;
     }
 }

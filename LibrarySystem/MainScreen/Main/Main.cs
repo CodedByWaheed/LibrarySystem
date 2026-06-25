@@ -7,6 +7,14 @@ namespace LibrarySystem
             InitializeComponent();
         }
 
-       
+        private void ctrlMainLoan1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
