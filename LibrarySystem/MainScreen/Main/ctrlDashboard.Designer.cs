@@ -51,12 +51,8 @@
             label9 = new Label();
             scLeftBottomMain = new SplitContainer();
             fpRecentlyActiveBook = new Sunny.UI.UIFlowLayoutPanel();
-            ctrlBook2 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
-            ctrlBook1 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
             uiLineChart1 = new Sunny.UI.UILineChart();
-            ctrlBook3 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
-            ctrlBook4 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
-            ctrlBook5 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard1 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -403,11 +399,7 @@
             // 
             // fpRecentlyActiveBook
             // 
-            fpRecentlyActiveBook.Controls.Add(ctrlBook5);
-            fpRecentlyActiveBook.Controls.Add(ctrlBook4);
-            fpRecentlyActiveBook.Controls.Add(ctrlBook3);
-            fpRecentlyActiveBook.Controls.Add(ctrlBook2);
-            fpRecentlyActiveBook.Controls.Add(ctrlBook1);
+            fpRecentlyActiveBook.Controls.Add(ctrlBookCard1);
             fpRecentlyActiveBook.Dock = DockStyle.Fill;
             fpRecentlyActiveBook.FillColor = SystemColors.Control;
             fpRecentlyActiveBook.Font = new Font("Microsoft Sans Serif", 12F);
@@ -422,20 +414,6 @@
             fpRecentlyActiveBook.TabIndex = 0;
             fpRecentlyActiveBook.Text = "uiFlowLayoutPanel1";
             fpRecentlyActiveBook.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // ctrlBook2
-            // 
-            ctrlBook2.Location = new Point(99, 5);
-            ctrlBook2.Name = "ctrlBook2";
-            ctrlBook2.Size = new Size(196, 262);
-            ctrlBook2.TabIndex = 4;
-            // 
-            // ctrlBook1
-            // 
-            ctrlBook1.Location = new Point(21, 0);
-            ctrlBook1.Name = "ctrlBook1";
-            ctrlBook1.Size = new Size(196, 262);
-            ctrlBook1.TabIndex = 3;
             // 
             // uiLineChart1
             // 
@@ -454,26 +432,12 @@
             uiLineChart1.TabIndex = 0;
             uiLineChart1.Text = "uiLineChart1";
             // 
-            // ctrlBook3
+            // ctrlBookCard1
             // 
-            ctrlBook3.Location = new Point(144, -10);
-            ctrlBook3.Name = "ctrlBook3";
-            ctrlBook3.Size = new Size(196, 262);
-            ctrlBook3.TabIndex = 5;
-            // 
-            // ctrlBook4
-            // 
-            ctrlBook4.Location = new Point(119, -58);
-            ctrlBook4.Name = "ctrlBook4";
-            ctrlBook4.Size = new Size(196, 262);
-            ctrlBook4.TabIndex = 6;
-            // 
-            // ctrlBook5
-            // 
-            ctrlBook5.Location = new Point(191, -31);
-            ctrlBook5.Name = "ctrlBook5";
-            ctrlBook5.Size = new Size(196, 262);
-            ctrlBook5.TabIndex = 7;
+            ctrlBookCard1.Location = new Point(4, 5);
+            ctrlBookCard1.Name = "ctrlBookCard1";
+            ctrlBookCard1.Size = new Size(166, 208);
+            ctrlBookCard1.TabIndex = 3;
             // 
             // ctrlDashboard
             // 
@@ -550,10 +514,6 @@
         private Sunny.UI.UILineChart uiLineChart1;
         private Label label10;
         private Sunny.UI.UIFlowLayoutPanel fpRecentlyActiveBook;
-        private Controls.ctrlBookCard ctrlBook2;
-        private Controls.ctrlBookCard ctrlBook1;
-        private Controls.ctrlBookCard ctrlBook5;
-        private Controls.ctrlBookCard ctrlBook4;
-        private Controls.ctrlBookCard ctrlBook3;
+        private Controls.ctrlBookCard ctrlBookCard1;
     }
 }
