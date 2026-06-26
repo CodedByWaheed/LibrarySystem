@@ -46,7 +46,6 @@
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
             separator1 = new ReaLTaiizor.Controls.Separator();
-            ctrlMainFines1 = new LibrarySystem.MainScreen.Fines.ctrlMainFines();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -162,6 +161,7 @@
             dashboradToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             dashboradToolStripMenuItem.Size = new Size(151, 46);
             dashboradToolStripMenuItem.Text = "Dashboard";
+            dashboradToolStripMenuItem.Click += dashboradToolStripMenuItem_Click;
             // 
             // booksToolStripMenuItem
             // 
@@ -242,7 +242,6 @@
             // scRightSide.Panel2
             // 
             scRightSide.Panel2.BackColor = Color.WhiteSmoke;
-            scRightSide.Panel2.Controls.Add(ctrlMainFines1);
             scRightSide.Panel2.Controls.Add(separator1);
             scRightSide.Size = new Size(958, 777);
             scRightSide.SplitterDistance = 76;
@@ -324,14 +323,6 @@
             separator1.TabIndex = 0;
             separator1.Text = "separator1";
             // 
-            // ctrlMainFines1
-            // 
-            ctrlMainFines1.Dock = DockStyle.Fill;
-            ctrlMainFines1.Location = new Point(0, 12);
-            ctrlMainFines1.Name = "ctrlMainFines1";
-            ctrlMainFines1.Size = new Size(958, 688);
-            ctrlMainFines1.TabIndex = 1;
-            // 
             // fmMain
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -385,6 +376,5 @@
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
         private Sunny.UI.UITextBox uiTextBox1;
         private MainScreen.Loans.ctrlMainLoan ctrlMainLoan1;
-        private MainScreen.Fines.ctrlMainFines ctrlMainFines1;
     }
 }

@@ -16,5 +16,10 @@ namespace LibrarySystem
         {
 
         }
+
+        private void dashboradToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
