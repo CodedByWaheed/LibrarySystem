@@ -46,7 +46,6 @@
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
             pMain = new Sunny.UI.UIPanel();
-            ctrlMainSettings1 = new LibrarySystem.MainScreen.Settings.ctrlMainSettings();
             separator1 = new ReaLTaiizor.Controls.Separator();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
@@ -61,7 +60,6 @@
             scRightSide.Panel1.SuspendLayout();
             scRightSide.Panel2.SuspendLayout();
             scRightSide.SuspendLayout();
-            pMain.SuspendLayout();
             SuspendLayout();
             // 
             // scMain
@@ -324,7 +322,6 @@
             // 
             // pMain
             // 
-            pMain.Controls.Add(ctrlMainSettings1);
             pMain.Dock = DockStyle.Fill;
             pMain.Font = new Font("Microsoft Sans Serif", 12F);
             pMain.Location = new Point(0, 12);
@@ -336,14 +333,6 @@
             pMain.TabIndex = 1;
             pMain.Text = null;
             pMain.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // ctrlMainSettings1
-            // 
-            ctrlMainSettings1.Dock = DockStyle.Fill;
-            ctrlMainSettings1.Location = new Point(0, 0);
-            ctrlMainSettings1.Name = "ctrlMainSettings1";
-            ctrlMainSettings1.Size = new Size(958, 688);
-            ctrlMainSettings1.TabIndex = 0;
             // 
             // separator1
             // 
@@ -386,7 +375,6 @@
             scRightSide.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scRightSide).EndInit();
             scRightSide.ResumeLayout(false);
-            pMain.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -412,6 +400,5 @@
         private Sunny.UI.UITextBox uiTextBox1;
         private MainScreen.Loans.ctrlMainLoan ctrlMainLoan1;
         private Sunny.UI.UIPanel pMain;
-        private MainScreen.Settings.ctrlMainSettings ctrlMainSettings1;
     }
 }

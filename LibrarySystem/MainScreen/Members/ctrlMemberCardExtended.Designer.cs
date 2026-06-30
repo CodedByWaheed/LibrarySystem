@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem.MainScreen.Members
 {
-    partial class ctrlMainMember
+    partial class ctrlMemberCardExtended
     {
         /// <summary> 
         /// Required designer variable.

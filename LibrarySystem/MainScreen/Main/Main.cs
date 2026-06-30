@@ -67,7 +67,7 @@ namespace LibrarySystem
         {
             pMain.SuspendLayout();
             pMain.Controls.Clear();
-            pMain.Controls.Add(new ctrlMainMember() { Dock = DockStyle.Fill });
+            pMain.Controls.Add(new ctrlMemberCardExtended() { Dock = DockStyle.Fill });
             pMain.ResumeLayout();
         }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibrarySystem.MainScreen.Members
 {
-    public partial class ctrlMainMember : UserControl
+    public partial class ctrlMemberCardExtended : UserControl
     {
-        public ctrlMainMember()
+        public ctrlMemberCardExtended()
         {
             InitializeComponent();
         }
