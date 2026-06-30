@@ -58,6 +58,14 @@
             label7 = new Label();
             label8 = new Label();
             flpFinesCard = new Sunny.UI.UIFlowLayoutPanel();
+            ctrlFineCardExtended1 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended2 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended3 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended4 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended5 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended6 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended7 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
+            ctrlFineCardExtended8 = new LibrarySystem.MainScreen.Loans.ctrlFineCardExtended();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -94,6 +102,7 @@
             scRightBottomTopMain.SuspendLayout();
             uiPanel3.SuspendLayout();
             uiPanel4.SuspendLayout();
+            flpFinesCard.SuspendLayout();
             SuspendLayout();
             // 
             // scMain
@@ -533,6 +542,14 @@
             // 
             // flpFinesCard
             // 
+            flpFinesCard.Controls.Add(ctrlFineCardExtended8);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended7);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended6);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended5);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended4);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended3);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended2);
+            flpFinesCard.Controls.Add(ctrlFineCardExtended1);
             flpFinesCard.Dock = DockStyle.Fill;
             flpFinesCard.Font = new Font("Microsoft Sans Serif", 12F);
             flpFinesCard.Location = new Point(0, 0);
@@ -546,6 +563,62 @@
             flpFinesCard.TabIndex = 12;
             flpFinesCard.Text = "uiFlowLayoutPanel1";
             flpFinesCard.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // ctrlFineCardExtended1
+            // 
+            ctrlFineCardExtended1.Location = new Point(24, 69);
+            ctrlFineCardExtended1.Name = "ctrlFineCardExtended1";
+            ctrlFineCardExtended1.Size = new Size(240, 238);
+            ctrlFineCardExtended1.TabIndex = 3;
+            // 
+            // ctrlFineCardExtended2
+            // 
+            ctrlFineCardExtended2.Location = new Point(338, 66);
+            ctrlFineCardExtended2.Name = "ctrlFineCardExtended2";
+            ctrlFineCardExtended2.Size = new Size(240, 238);
+            ctrlFineCardExtended2.TabIndex = 4;
+            // 
+            // ctrlFineCardExtended3
+            // 
+            ctrlFineCardExtended3.Location = new Point(346, 74);
+            ctrlFineCardExtended3.Name = "ctrlFineCardExtended3";
+            ctrlFineCardExtended3.Size = new Size(240, 238);
+            ctrlFineCardExtended3.TabIndex = 5;
+            // 
+            // ctrlFineCardExtended4
+            // 
+            ctrlFineCardExtended4.Location = new Point(354, 82);
+            ctrlFineCardExtended4.Name = "ctrlFineCardExtended4";
+            ctrlFineCardExtended4.Size = new Size(240, 238);
+            ctrlFineCardExtended4.TabIndex = 6;
+            // 
+            // ctrlFineCardExtended5
+            // 
+            ctrlFineCardExtended5.Location = new Point(362, 90);
+            ctrlFineCardExtended5.Name = "ctrlFineCardExtended5";
+            ctrlFineCardExtended5.Size = new Size(240, 238);
+            ctrlFineCardExtended5.TabIndex = 7;
+            // 
+            // ctrlFineCardExtended6
+            // 
+            ctrlFineCardExtended6.Location = new Point(370, 98);
+            ctrlFineCardExtended6.Name = "ctrlFineCardExtended6";
+            ctrlFineCardExtended6.Size = new Size(240, 238);
+            ctrlFineCardExtended6.TabIndex = 8;
+            // 
+            // ctrlFineCardExtended7
+            // 
+            ctrlFineCardExtended7.Location = new Point(378, 106);
+            ctrlFineCardExtended7.Name = "ctrlFineCardExtended7";
+            ctrlFineCardExtended7.Size = new Size(240, 238);
+            ctrlFineCardExtended7.TabIndex = 9;
+            // 
+            // ctrlFineCardExtended8
+            // 
+            ctrlFineCardExtended8.Location = new Point(386, 114);
+            ctrlFineCardExtended8.Name = "ctrlFineCardExtended8";
+            ctrlFineCardExtended8.Size = new Size(240, 238);
+            ctrlFineCardExtended8.TabIndex = 10;
             // 
             // ctrlMainFines
             // 
@@ -599,6 +672,7 @@
             uiPanel3.PerformLayout();
             uiPanel4.ResumeLayout(false);
             uiPanel4.PerformLayout();
+            flpFinesCard.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -634,5 +708,13 @@
         private Label label10;
         private Label label9;
         private Label label12;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended8;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended7;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended6;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended5;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended4;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended3;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended2;
+        private Loans.ctrlFineCardExtended ctrlFineCardExtended1;
     }
 }

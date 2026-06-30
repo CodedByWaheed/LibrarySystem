@@ -43,6 +43,10 @@
             crownLabel5 = new ReaLTaiizor.Controls.CrownLabel();
             bigLabel1 = new ReaLTaiizor.Controls.BigLabel();
             flpFines = new Sunny.UI.UIFlowLayoutPanel();
+            ctrlLoanCard1 = new LibrarySystem.MainScreen.Loans.ctrlLoanCard();
+            ctrlLoanCard2 = new LibrarySystem.MainScreen.Loans.ctrlLoanCard();
+            ctrlLoanCard3 = new LibrarySystem.MainScreen.Loans.ctrlLoanCard();
+            ctrlFinesCard1 = new LibrarySystem.MainScreen.Fines.ctrlFinesCard();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -55,10 +59,12 @@
             spTopBottomMain.Panel1.SuspendLayout();
             spTopBottomMain.Panel2.SuspendLayout();
             spTopBottomMain.SuspendLayout();
+            flpActiveLoans.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)scBottomBottomMain).BeginInit();
             scBottomBottomMain.Panel1.SuspendLayout();
             scBottomBottomMain.Panel2.SuspendLayout();
             scBottomBottomMain.SuspendLayout();
+            flpFines.SuspendLayout();
             SuspendLayout();
             // 
             // scMain
@@ -187,6 +193,9 @@
             // flpActiveLoans
             // 
             flpActiveLoans.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpActiveLoans.Controls.Add(ctrlLoanCard3);
+            flpActiveLoans.Controls.Add(ctrlLoanCard2);
+            flpActiveLoans.Controls.Add(ctrlLoanCard1);
             flpActiveLoans.FillColor = Color.White;
             flpActiveLoans.FillColor2 = Color.White;
             flpActiveLoans.Font = new Font("Microsoft Sans Serif", 12F);
@@ -279,6 +288,7 @@
             // flpFines
             // 
             flpFines.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            flpFines.Controls.Add(ctrlFinesCard1);
             flpFines.FillColor = Color.White;
             flpFines.FillColor2 = Color.White;
             flpFines.Font = new Font("Microsoft Sans Serif", 12F);
@@ -294,6 +304,35 @@
             flpFines.TabIndex = 1;
             flpFines.Text = "uiFlowLayoutPanel2";
             flpFines.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // ctrlLoanCard1
+            // 
+            ctrlLoanCard1.Location = new Point(12, 15);
+            ctrlLoanCard1.Name = "ctrlLoanCard1";
+            ctrlLoanCard1.Size = new Size(221, 162);
+            ctrlLoanCard1.TabIndex = 3;
+            // 
+            // ctrlLoanCard2
+            // 
+            ctrlLoanCard2.Location = new Point(335, 19);
+            ctrlLoanCard2.Name = "ctrlLoanCard2";
+            ctrlLoanCard2.Size = new Size(221, 162);
+            ctrlLoanCard2.TabIndex = 4;
+            // 
+            // ctrlLoanCard3
+            // 
+            ctrlLoanCard3.Location = new Point(343, 27);
+            ctrlLoanCard3.Name = "ctrlLoanCard3";
+            ctrlLoanCard3.Size = new Size(221, 162);
+            ctrlLoanCard3.TabIndex = 5;
+            // 
+            // ctrlFinesCard1
+            // 
+            ctrlFinesCard1.Border = Fines.ctrlFinesCard.enBorder.Visible;
+            ctrlFinesCard1.Location = new Point(76, 59);
+            ctrlFinesCard1.Name = "ctrlFinesCard1";
+            ctrlFinesCard1.Size = new Size(221, 162);
+            ctrlFinesCard1.TabIndex = 3;
             // 
             // ctrlMainMember
             // 
@@ -316,11 +355,13 @@
             spTopBottomMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)spTopBottomMain).EndInit();
             spTopBottomMain.ResumeLayout(false);
+            flpActiveLoans.ResumeLayout(false);
             scBottomBottomMain.Panel1.ResumeLayout(false);
             scBottomBottomMain.Panel1.PerformLayout();
             scBottomBottomMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scBottomBottomMain).EndInit();
             scBottomBottomMain.ResumeLayout(false);
+            flpFines.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -342,5 +383,9 @@
         private Sunny.UI.UIFlowLayoutPanel flpActiveLoans;
         private Sunny.UI.UIFlowLayoutPanel flpFines;
         private ctrlMemberCard ctrlMemberCard2;
+        private Loans.ctrlLoanCard ctrlLoanCard3;
+        private Loans.ctrlLoanCard ctrlLoanCard2;
+        private Loans.ctrlLoanCard ctrlLoanCard1;
+        private Fines.ctrlFinesCard ctrlFinesCard1;
     }
 }

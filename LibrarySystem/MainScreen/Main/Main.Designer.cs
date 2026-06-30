@@ -45,6 +45,8 @@
             parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             lUsername = new Sunny.UI.UILabel();
             avUser = new Sunny.UI.UIAvatar();
+            pMain = new Sunny.UI.UIPanel();
+            ctrlMainSettings1 = new LibrarySystem.MainScreen.Settings.ctrlMainSettings();
             separator1 = new ReaLTaiizor.Controls.Separator();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
@@ -59,6 +61,7 @@
             scRightSide.Panel1.SuspendLayout();
             scRightSide.Panel2.SuspendLayout();
             scRightSide.SuspendLayout();
+            pMain.SuspendLayout();
             SuspendLayout();
             // 
             // scMain
@@ -172,6 +175,7 @@
             booksToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             booksToolStripMenuItem.Size = new Size(151, 46);
             booksToolStripMenuItem.Text = "Books";
+            booksToolStripMenuItem.Click += booksToolStripMenuItem_Click;
             // 
             // membersToolStripMenuItem
             // 
@@ -182,6 +186,7 @@
             membersToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             membersToolStripMenuItem.Size = new Size(151, 46);
             membersToolStripMenuItem.Text = "Members";
+            membersToolStripMenuItem.Click += membersToolStripMenuItem_Click;
             // 
             // loansToolStripMenuItem
             // 
@@ -192,6 +197,7 @@
             loansToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             loansToolStripMenuItem.Size = new Size(151, 46);
             loansToolStripMenuItem.Text = "Loans";
+            loansToolStripMenuItem.Click += loansToolStripMenuItem_Click;
             // 
             // finesToolStripMenuItem
             // 
@@ -202,6 +208,7 @@
             finesToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             finesToolStripMenuItem.Size = new Size(151, 46);
             finesToolStripMenuItem.Text = "Fines";
+            finesToolStripMenuItem.Click += finesToolStripMenuItem_Click;
             // 
             // reportsToolStripMenuItem
             // 
@@ -212,6 +219,7 @@
             reportsToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             reportsToolStripMenuItem.Size = new Size(151, 46);
             reportsToolStripMenuItem.Text = "Reports";
+            reportsToolStripMenuItem.Click += reportsToolStripMenuItem_Click;
             // 
             // settingsToolStripMenuItem
             // 
@@ -222,6 +230,7 @@
             settingsToolStripMenuItem.Padding = new Padding(20, 5, 20, 5);
             settingsToolStripMenuItem.Size = new Size(151, 46);
             settingsToolStripMenuItem.Text = "Settings";
+            settingsToolStripMenuItem.Click += settingsToolStripMenuItem_Click;
             // 
             // scRightSide
             // 
@@ -242,6 +251,7 @@
             // scRightSide.Panel2
             // 
             scRightSide.Panel2.BackColor = Color.WhiteSmoke;
+            scRightSide.Panel2.Controls.Add(pMain);
             scRightSide.Panel2.Controls.Add(separator1);
             scRightSide.Size = new Size(958, 777);
             scRightSide.SplitterDistance = 76;
@@ -312,6 +322,29 @@
             avUser.Size = new Size(58, 52);
             avUser.TabIndex = 4;
             // 
+            // pMain
+            // 
+            pMain.Controls.Add(ctrlMainSettings1);
+            pMain.Dock = DockStyle.Fill;
+            pMain.Font = new Font("Microsoft Sans Serif", 12F);
+            pMain.Location = new Point(0, 12);
+            pMain.Margin = new Padding(4, 5, 4, 5);
+            pMain.MinimumSize = new Size(1, 1);
+            pMain.Name = "pMain";
+            pMain.RectColor = Color.Transparent;
+            pMain.Size = new Size(958, 688);
+            pMain.TabIndex = 1;
+            pMain.Text = null;
+            pMain.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // ctrlMainSettings1
+            // 
+            ctrlMainSettings1.Dock = DockStyle.Fill;
+            ctrlMainSettings1.Location = new Point(0, 0);
+            ctrlMainSettings1.Name = "ctrlMainSettings1";
+            ctrlMainSettings1.Size = new Size(958, 688);
+            ctrlMainSettings1.TabIndex = 0;
+            // 
             // separator1
             // 
             separator1.BackColor = Color.White;
@@ -336,6 +369,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Library";
             TransparencyKey = Color.Fuchsia;
+            Load += fmMain_Load;
             scMain.Panel1.ResumeLayout(false);
             scMain.Panel2.ResumeLayout(false);
             (scMain).EndInit();
@@ -352,6 +386,7 @@
             scRightSide.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scRightSide).EndInit();
             scRightSide.ResumeLayout(false);
+            pMain.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -376,5 +411,7 @@
         private ReaLTaiizor.Controls.ParrotPictureBox parrotPictureBox1;
         private Sunny.UI.UITextBox uiTextBox1;
         private MainScreen.Loans.ctrlMainLoan ctrlMainLoan1;
+        private Sunny.UI.UIPanel pMain;
+        private MainScreen.Settings.ctrlMainSettings ctrlMainSettings1;
     }
 }

@@ -37,6 +37,14 @@
             uiPanel1 = new Sunny.UI.UIPanel();
             parrotPictureBox1 = new ReaLTaiizor.Controls.ParrotPictureBox();
             label1 = new Label();
+            ctrlBookCard1 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard2 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard3 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard4 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard5 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard6 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard7 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            ctrlBookCard8 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -135,6 +143,14 @@
             // 
             // fpBook
             // 
+            fpBook.Controls.Add(ctrlBookCard8);
+            fpBook.Controls.Add(ctrlBookCard7);
+            fpBook.Controls.Add(ctrlBookCard6);
+            fpBook.Controls.Add(ctrlBookCard5);
+            fpBook.Controls.Add(ctrlBookCard4);
+            fpBook.Controls.Add(ctrlBookCard3);
+            fpBook.Controls.Add(ctrlBookCard2);
+            fpBook.Controls.Add(ctrlBookCard1);
             fpBook.Controls.Add(uiPanel1);
             fpBook.Dock = DockStyle.Fill;
             fpBook.FillColor = SystemColors.Control;
@@ -200,6 +216,62 @@
             label1.TabIndex = 1;
             label1.Text = "Add New Book";
             // 
+            // ctrlBookCard1
+            // 
+            ctrlBookCard1.Location = new Point(191, 95);
+            ctrlBookCard1.Name = "ctrlBookCard1";
+            ctrlBookCard1.Size = new Size(166, 208);
+            ctrlBookCard1.TabIndex = 25;
+            // 
+            // ctrlBookCard2
+            // 
+            ctrlBookCard2.Location = new Point(315, 61);
+            ctrlBookCard2.Name = "ctrlBookCard2";
+            ctrlBookCard2.Size = new Size(166, 208);
+            ctrlBookCard2.TabIndex = 26;
+            // 
+            // ctrlBookCard3
+            // 
+            ctrlBookCard3.Location = new Point(323, 69);
+            ctrlBookCard3.Name = "ctrlBookCard3";
+            ctrlBookCard3.Size = new Size(166, 208);
+            ctrlBookCard3.TabIndex = 27;
+            // 
+            // ctrlBookCard4
+            // 
+            ctrlBookCard4.Location = new Point(331, 77);
+            ctrlBookCard4.Name = "ctrlBookCard4";
+            ctrlBookCard4.Size = new Size(166, 208);
+            ctrlBookCard4.TabIndex = 28;
+            // 
+            // ctrlBookCard5
+            // 
+            ctrlBookCard5.Location = new Point(339, 85);
+            ctrlBookCard5.Name = "ctrlBookCard5";
+            ctrlBookCard5.Size = new Size(166, 208);
+            ctrlBookCard5.TabIndex = 29;
+            // 
+            // ctrlBookCard6
+            // 
+            ctrlBookCard6.Location = new Point(347, 93);
+            ctrlBookCard6.Name = "ctrlBookCard6";
+            ctrlBookCard6.Size = new Size(166, 208);
+            ctrlBookCard6.TabIndex = 30;
+            // 
+            // ctrlBookCard7
+            // 
+            ctrlBookCard7.Location = new Point(355, 101);
+            ctrlBookCard7.Name = "ctrlBookCard7";
+            ctrlBookCard7.Size = new Size(166, 208);
+            ctrlBookCard7.TabIndex = 31;
+            // 
+            // ctrlBookCard8
+            // 
+            ctrlBookCard8.Location = new Point(363, 109);
+            ctrlBookCard8.Name = "ctrlBookCard8";
+            ctrlBookCard8.Size = new Size(166, 208);
+            ctrlBookCard8.TabIndex = 32;
+            // 
             // ctrlMainBook
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -232,5 +304,13 @@
         private Label label1;
         private Sunny.UI.UISwitch swtchAvailablty;
         private Label label2;
+        private Controls.ctrlBookCard ctrlBookCard8;
+        private Controls.ctrlBookCard ctrlBookCard7;
+        private Controls.ctrlBookCard ctrlBookCard6;
+        private Controls.ctrlBookCard ctrlBookCard5;
+        private Controls.ctrlBookCard ctrlBookCard4;
+        private Controls.ctrlBookCard ctrlBookCard3;
+        private Controls.ctrlBookCard ctrlBookCard2;
+        private Controls.ctrlBookCard ctrlBookCard1;
     }
 }
