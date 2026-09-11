@@ -8,18 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibrarySystem.MainScreen
+namespace LibrarySystem.LoginScreen
 {
-    public partial class ctrlDashboard : UserControl
+    public partial class frmLoginScreen : Form
     {
-        public ctrlDashboard()
+        public frmLoginScreen()
         {
             InitializeComponent();
         }
 
-        private void ctrlDashboard_Load(object sender, EventArgs e)
+        private void airForm1_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

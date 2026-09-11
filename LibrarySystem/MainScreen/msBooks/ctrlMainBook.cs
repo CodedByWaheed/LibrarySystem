@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,9 @@ namespace LibrarySystem.MainScreen.Books
             InitializeComponent();
         }
 
-        private void scMain_Panel2_Paint(object sender, PaintEventArgs e)
+        private void ctrlMainBook_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void fpBook_Click(object sender, EventArgs e)
-        {
-
+            Books.GetAllBooks();
         }
     }
 }

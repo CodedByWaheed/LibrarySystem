@@ -1,3 +1,5 @@
+using LibrarySystem.LoginScreen;
+
 namespace LibrarySystem
 {
     internal static class Program
@@ -12,6 +14,7 @@ namespace LibrarySystem
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new fmMain());
+            //Application.Run(new frmLoginScreen());
         }
     }
 }

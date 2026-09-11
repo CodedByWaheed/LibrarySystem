@@ -51,8 +51,8 @@
             label9 = new Label();
             scLeftBottomMain = new SplitContainer();
             fpRecentlyActiveBook = new Sunny.UI.UIFlowLayoutPanel();
-            uiLineChart1 = new Sunny.UI.UILineChart();
             ctrlBookCard1 = new LibrarySystem.MainScreen.Controls.ctrlBookCard();
+            uiLineChart1 = new Sunny.UI.UILineChart();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -415,6 +415,13 @@
             fpRecentlyActiveBook.Text = "uiFlowLayoutPanel1";
             fpRecentlyActiveBook.TextAlignment = ContentAlignment.MiddleCenter;
             // 
+            // ctrlBookCard1
+            // 
+            ctrlBookCard1.Location = new Point(4, 5);
+            ctrlBookCard1.Name = "ctrlBookCard1";
+            ctrlBookCard1.Size = new Size(166, 208);
+            ctrlBookCard1.TabIndex = 3;
+            // 
             // uiLineChart1
             // 
             uiLineChart1.BackColor = SystemColors.Control;
@@ -432,20 +439,15 @@
             uiLineChart1.TabIndex = 0;
             uiLineChart1.Text = "uiLineChart1";
             // 
-            // ctrlBookCard1
-            // 
-            ctrlBookCard1.Location = new Point(4, 5);
-            ctrlBookCard1.Name = "ctrlBookCard1";
-            ctrlBookCard1.Size = new Size(166, 208);
-            ctrlBookCard1.TabIndex = 3;
-            // 
             // ctrlDashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             Controls.Add(scMain);
             Name = "ctrlDashboard";
             Size = new Size(796, 409);
+            Load += ctrlDashboard_Load;
             scMain.Panel1.ResumeLayout(false);
             scMain.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scMain).EndInit();

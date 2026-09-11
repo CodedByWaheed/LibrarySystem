@@ -47,6 +47,7 @@
             avUser = new Sunny.UI.UIAvatar();
             pMain = new Sunny.UI.UIPanel();
             separator1 = new ReaLTaiizor.Controls.Separator();
+            ctrlDashboard1 = new LibrarySystem.MainScreen.ctrlDashboard();
             (scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -60,6 +61,7 @@
             scRightSide.Panel1.SuspendLayout();
             scRightSide.Panel2.SuspendLayout();
             scRightSide.SuspendLayout();
+            pMain.SuspendLayout();
             SuspendLayout();
             // 
             // scMain
@@ -322,6 +324,7 @@
             // 
             // pMain
             // 
+            pMain.Controls.Add(ctrlDashboard1);
             pMain.Dock = DockStyle.Fill;
             pMain.Font = new Font("Microsoft Sans Serif", 12F);
             pMain.Location = new Point(0, 12);
@@ -344,6 +347,14 @@
             separator1.Size = new Size(958, 12);
             separator1.TabIndex = 0;
             separator1.Text = "separator1";
+            // 
+            // ctrlDashboard1
+            // 
+            ctrlDashboard1.Dock = DockStyle.Fill;
+            ctrlDashboard1.Location = new Point(0, 0);
+            ctrlDashboard1.Name = "ctrlDashboard1";
+            ctrlDashboard1.Size = new Size(958, 688);
+            ctrlDashboard1.TabIndex = 0;
             // 
             // fmMain
             // 
@@ -375,6 +386,7 @@
             scRightSide.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)scRightSide).EndInit();
             scRightSide.ResumeLayout(false);
+            pMain.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -400,5 +412,6 @@
         private Sunny.UI.UITextBox uiTextBox1;
         private MainScreen.Loans.ctrlMainLoan ctrlMainLoan1;
         private Sunny.UI.UIPanel pMain;
+        private MainScreen.ctrlDashboard ctrlDashboard1;
     }
 }

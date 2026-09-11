@@ -64,6 +64,7 @@
             label13 = new Label();
             parrotPictureBox7 = new ReaLTaiizor.Controls.ParrotPictureBox();
             label14 = new Label();
+            label12 = new Label();
             ((System.ComponentModel.ISupportInitialize)scMain).BeginInit();
             scMain.Panel1.SuspendLayout();
             scMain.Panel2.SuspendLayout();
@@ -327,6 +328,7 @@
             // uiPanel4
             // 
             uiPanel4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            uiPanel4.Controls.Add(label12);
             uiPanel4.Controls.Add(parrotPictureBox4);
             uiPanel4.Controls.Add(label8);
             uiPanel4.Cursor = Cursors.Hand;
@@ -661,6 +663,17 @@
             label14.TabIndex = 6;
             label14.Text = "Fine Rules";
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.Location = new Point(21, 48);
+            label12.Name = "label12";
+            label12.Size = new Size(122, 22);
+            label12.TabIndex = 3;
+            label12.Text = "Upgrade User";
+            // 
             // ctrlMainSettings
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -744,5 +757,6 @@
         private Sunny.UI.UIIntegerUpDown numudMaxRenewals;
         private Sunny.UI.UIDoubleUpDown numudDailyFee;
         private Sunny.UI.UIIntegerUpDown numudGracePeriod;
+        private Label label12;
     }
 }

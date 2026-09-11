@@ -278,6 +278,35 @@ namespace LibrarySystem_DL
             return books;
         }
 
+        public static List<BookDTO> GetAllBooks(bool isArchived = false)
+        {
+            List<BookDTO> books = new List<BookDTO>();
+            using (SqlConnection connection = clsDataAccessSettings.GetConnection())
+            using (SqlCommand command = new SqlCommand("SP_Book_Get", connection))
+            {
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@IsArchived", isArchived);
+                try
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            books.Add(_MapReaderToBook(reader));
+                        }
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    Console.WriteLine("GetAllBooks error: " + ex.Message);
+                }
+            }
+            return books;
+        }
+        
+
+
         // =====================================================================
         // UPDATE
         // =====================================================================

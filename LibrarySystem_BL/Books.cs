@@ -169,5 +169,15 @@ namespace LibrarySystem_BL
         {
             return BooksData.DeleteBook(bookID);
         }
+
+
+        public static List<Books> GetAllBooks(bool IsArchived = false)
+        {
+            List<BookDTO> dtos = BooksData.GetAllBooks(IsArchived);
+            List<Books> result = new List<Books>();
+            foreach (BookDTO dto in dtos)
+                result.Add(new Books(dto, enMode.Update));
+            return result;
+        }
     }
 }

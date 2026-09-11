@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LibrarySystem.MainScreen.Members
 {
-    public partial class ctrlMainCard : UserControl
+    public partial class ctrlMainMembers : UserControl
     {
-        public ctrlMainCard()
+        public ctrlMainMembers()
         {
             InitializeComponent();
+        }
+
+        private void ctrlMainCard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
